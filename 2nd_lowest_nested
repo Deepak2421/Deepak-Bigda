@@ -1,0 +1,32 @@
+nestedlist = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]
+#nestedlist.sort()
+
+#print(s)
+'''lowestscore = min(b for a,b in nestedlist)
+for a,b in nestedlist:
+    nestedlist.sort()
+    for a,b in nestedlist:
+        if (b == lowestscore): 
+            nestedlist.remove([a,b])
+
+secondlowest = min(b for a,b in nestedlist)
+for a,b in nestedlist:
+    if b == secondlowest:
+        print("a")'''
+ls =[]        
+for k,v in nestedlist:
+    ls.append(v)    
+    print(ls)    
+ls1= min(ls)
+
+for k,v in nestedlist:
+    nestedlist.sort()
+    for a,b in nestedlist:
+        if (b == ls1): 
+            
+            nestedlist.remove([a,b])
+secondlowest = min(b for a,b in nestedlist)
+for a,b in nestedlist:
+    if b == secondlowest:
+        print([[a]])
+              
